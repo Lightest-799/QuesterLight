@@ -85,7 +85,7 @@ entries.forEach(entry=>{
 
 if(entry.isIntersecting){
 
-entry.target.pause();
+entry.target.play();
 
 }else{
 
@@ -159,13 +159,21 @@ header.classList.remove("bg-gray-950","shadow-xl");
 document.addEventListener("DOMContentLoaded", () => {
   const videos = document.querySelectorAll(".scroll-video");
 
+  videos.forEach((video) => {
+    video.addEventListener("play", () => {
+      videos.forEach((otherVideo) => {
+        if (otherVideo !== video) {
+          otherVideo.pause();
+        }
+      });
+    });
+  });
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        const video = entry.target;
-
         if (!entry.isIntersecting) {
-          video.pause();
+          entry.target.pause();
         }
       });
     },
