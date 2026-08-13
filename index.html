@@ -1,0 +1,256 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Quester Light & Effects</title>
+    <link rel="icon" href="./images/icon.png">
+</head>
+
+<button
+id="topBtn"
+class="hidden fixed bottom-8 right-8 bg-amber-600 px-4 py-3 rounded-full">
+↑
+</button>
+
+<body id="home" class="text-base md:text-lg text-slate-100 font-normal bg-gray-950 min-h-screen font-sans scroll-smooth">
+    <div class="container mx-auto px-4 md:px-8">
+        <!-- HEADER -->
+        <section class="mb-20">
+            <header class="flex flex-row justify-between items-center py-2 md:py4 gap-2 md:gap-6">
+                <div>
+                    <img class="w-24 md:w-32" src="./images/logo.png" alt="Quester-logo">
+                </div>
+
+                <button id="menu-btn" class="md:hidden text-3xl">
+                    ☰
+                </button>
+
+                <nav id="menu" class="hidden md:block">
+                    <ul class="flex flex-col md:flex-row gap-6 md:gap-10 text-base">
+                        <li><a class="hover:text-orange-400" href="#services">Service</a></li>
+                        <li><a class="hover:text-orange-400" href="#gallery">Gallery</a></li>
+                        <li><a class="hover:text-orange-400" href="#about">About</a></li>
+                        <li><a class="hover:text-orange-400" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- HERO SECTION -->
+
+
+            <div class="text-center mt-16 md:mt-24 min-h-[70vh] flex flex-col justify-center items-center">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-10 tracking-tight leading-tight">
+                    Lighting Your Moments with <br><span
+                        class="inline-block bg-amber-600 px-4 py-2 mt-4 rounded-3xl ring-3 mx-auto">Unforgettable</span>
+                    Experiences
+                </h1>
+
+                <p class="text-base sm:text-lg md:text-xl lg:text-2xl leading-normal max-w-5xl mx-auto">
+                    At Quester Light & Effects, we bring events to life with stunning lighting designs and immersive
+                    special effects, from elegant weddings to high-energy parties and corporate events, we transform
+                    every space into a breathtaking experience. <br class="block md:hidden">
+                    Make your event stand out.
+                </p>
+
+                <!-- CTA BUTTON -->
+                <div class="mt-10">
+                    <a href="tel:+2348037217865"
+                        class="bg-amber-600 px-8 py-4 rounded-full hover:bg-amber-700 duration-300">
+                        Book An Event
+                    </a>
+                </div>
+        </section>
+
+        <!-- GALLARY VIDEOS -->
+
+
+        <section class="video">
+            <div id="gallery" class="flex flex-col justify-center items-center md:flex-row gap-4">
+                <video class="rounded-x1 w-full md:w-64 shadow-lg hover:scale-105 duration-300" src="./videos/Right video.mp4"
+                    alt="Right video" autoplay muted loop playsinline>right</video>
+                <video class="rounded-x1 w-full md:w-64 shadow-lg hover:scale-105 duration-300" src="./videos/Quester 3.mp4"
+                    alt="Right video" autoplay muted loop playsinline>right</video>
+                <video class="rounded-x1 w-full md:w-64 shadow-lg hover:scale-105 duration-300" src="./videos/This 1.mp4"
+                    alt="Right video" autoplay muted loop playsinline>right</video>
+                <video class="rounded-x1 w-full md:w-64 shadow-lg hover:scale-105 duration-300" src="./videos/This 2.mp4"
+                    alt="Right video" autoplay muted loop playsinline>right</video>
+                <video class="rounded-x1 w-full md:w-64 shadow-lg hover:scale-105 duration-300" src="./videos/Quester who.mp4"
+                    alt="Right video" autoplay muted loop playsinline>right</video>
+            </div>
+        </section>
+
+        <!-- SERCIVES CARDS-->
+        <section id="services" class="mt-10">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:3xl text-white mb-6">Our Services</h2>
+                <p class="mt-4 text-sm md:text-base">
+                    We provide professional lighting and special effects solutions
+                    that transform events into unforgettable experiences.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div
+                    class="p-6 rounded-xl border border-amber-700 hover:bg-amber-700 hover:scale-105 duration-300 cursor-pointer">
+                    <h3 class="text-1xl md:2xl font-semibold mb-3">Stage Lighting</h3>
+                    <p class="text-sm md:text-base">
+                        Professional lighting setups designed to enhance concerts,
+                        weddings, and live events.
+                    </p>
+                </div>
+
+                <div
+                    class="p-6 rounded-xl border border-amber-700 hover:bg-amber-700 hover:scale-105 duration-300 cursor-pointer">
+                    <h3 class="text-1xl md:2xl font-semibold mb-3">Special Effects</h3>
+                    <p class="text-sm md:text-base">
+                        Smoke, haze, and atmospheric effects that create immersive
+                        event experiences.
+                    </p>
+                </div>
+
+                <div
+                    class="p-6 rounded-xl border border-amber-700 hover:bg-amber-700 hover:scale-105 duration-300 cursor-pointer">
+                    <h3 class="text-1xl md:2xl font-semibold mb-3">Dynamic Light Shows</h3>
+                    <p class="text-sm md:text-base">
+                        Synchronized lighting displays that bring energy and excitement
+                        to every event.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+
+        <div class="grid grid-cols-1 md:grid-cols-1 gap-4">
+
+
+            <div id="about" class="rounded-2xl border border-amber-700 p-8 md:p-8 mt-8 md:mt-20">
+                <h2 class="text-2xl md:text-3xl text-white">
+                    About Us
+                </h2>
+
+                <p class="mt-4 leading-7 text-sm md:text-base ">
+                    At Quester Light & Effects, we don’t just light up spaces, we create atmosphere, emotion, and
+                    unforgettable moments. Every beam of light, every effect, and every detail is carefully designed to
+                    transform your event into something truly extraordinary.
+
+                    Whether it’s the elegance of a wedding, the energy of a party, or the professionalism of a corporate
+                    event, we bring your vision to life with precision and creativity. Our lighting doesn’t just
+                    brighten a venue, it tells a story, sets the mood, and leaves a lasting impression on everyone
+                    present.
+
+                    With a passion for excellence and an eye for perfection, we go beyond expectations to deliver
+                    experiences that feel magical, seamless, and uniquely yours. When you choose Quester Light &
+                    Effects, you are not just planning an event, you are creating a moment people will remember long
+                    after the lights go out.
+                </p>
+            </div>
+
+
+            <!-- DIFFERENCE SECTION -->
+
+            <div class="rounded-2xl border border-amber-700 p-8 md:p-8 mt-2">
+                <h2 class="text-2xl md:text-3xl text-white">
+                    What Makes Us Different
+                </h2>
+
+                <p class="mt-4 mb-10 leading-7 text-sm md:text-base">
+                    we don’t believe in ordinary, we create experiences that stand out. What sets us apart is our
+                    commitment to turning every event into a visually stunning masterpiece, not just a setup.
+
+                    We combine creativity, precision, and modern technology to deliver lighting and effects that truly
+                    elevate your event. Every detail is thoughtfully designed to match your vision, your mood, and your
+                    story, because no two events should ever feel the same.
+
+                    Our team doesn’t just install lights; we design atmospheres. From soft, elegant glows to bold,
+                    high-energy effects, we know exactly how to create the right vibe for every moment. And we do it
+                    with professionalism, reliability, and a passion that shows in every result.
+
+                    With Quester Light & Effects, you’re not just getting a service, you’re getting a partner dedicated
+                    to making your event unforgettable.
+                </p>
+
+
+            </div>
+
+
+            <!-- MISSION SECTION -->
+
+            <div id="mission" class="rounded-2xl border border-amber-700 p-8 md:p-8 mt-2 mb-2">
+                <h2 class="text-2xl md:text-3xl text-white">
+                    Our Mission
+                </h2>
+                <ul class="mb-2 md:m-10 text-sm md:text-base">
+                    <li class="mt-4 leading-7">
+                        <strong>Quality:</strong>
+                        At Quester Light & Effects, we are committed to delivering exceptional quality in every event we
+                        handle. From our lighting equipment to our setup and execution, we pay attention to every detail
+                        to ensure a flawless and professional result that exceeds expectations.
+                    </li>
+
+                    <li class="mt-4 leading-7">
+                        <strong>Satisfaction:</strong>
+                        Client satisfaction is at the heart of everything we do. Our mission is to create memorable
+                        experiences that leave our clients happy, confident, and proud of their events. We work closely
+                        with every client to understand their vision and bring it to life with excellence and care.
+                    </li>
+
+                    <li class="mt-4 leading-7">
+                        <strong>Creativity:</strong>
+                        We believe creativity is what transforms ordinary events into unforgettable experiences. Through
+                        innovative lighting concepts, unique effects, and modern event designs, we continuously push
+                        boundaries to create visually stunning atmospheres that captivate every audience.
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <hr class="mt-14 md:mt-32 mb-2 md:mb-6 border-dotted border-gray-600">
+
+        <footer>
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <P class="text-sm md:text-base">
+                    © 2026 Quester Light And EffectS. All rights reserved. Connect with us on social media or contact
+                    us for more information.
+                </P>
+
+                <div id="contact"
+                    class="flex flex-row md:flex-col justify-center items-center gap-2 mb-4 text-sm md:text-base">
+                    <p class="w-4">
+                        <a href="https://facebook.com/lightandeffectbyquester" target="_blank"><img loading="lazy" class="rounded-4xl"
+                                src="./images/facebook.png" alt="facebook"></a>
+                    </p>
+                    <p class="w-4 rounded-b-full">
+                        <a href="https://instergram.com/lightandeffectbyquester" target="_blank"><img loading="lazy"
+                                class="rounded-4xl" src="./images/Instergram.png" alt="instergram"></a>
+                    </p>
+                    <p class="w-4 rounded-b-full">
+                        <a href="https://wa.me/+2348037217865" target="_blank"><img loading="lazy" class="rounded-4xl"
+                                src="./images/whatsapp.png" alt="whatsapp"></a>
+                    </p>
+                    <p class="w-4">
+                        <a href="tel:+2348037217865" target="_blank"><img loading="lazy" class="rounded-4xl" src="./images/Phone.png"
+                                alt="telephone"></a>
+                    </p>
+                    <p class="w-4">
+                        <a href="mailto:aelightchuks123@gmail.com" target="_blank"><img loading="lazy" class="rounded-4xl"
+                                src="./images/email.png" alt="email"></a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="./quester.js"></script>
+</body>
+
+</html>
