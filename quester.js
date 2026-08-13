@@ -156,25 +156,25 @@ header.classList.remove("bg-gray-950","shadow-xl");
 
 // //          FOR THE VIDEO
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const videos = document.querySelectorAll(".scroll-video");
+document.addEventListener("DOMContentLoaded", () => {
+  const videos = document.querySelectorAll(".scroll-video");
 
-//   const observer = new IntersectionObserver(
-//     (entries) => {
-//       entries.forEach((entry) => {
-//         const video = entry.target;
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target;
 
-//         if (!entry.isIntersecting) {
-//           video.pause();
-//         }
-//       });
-//     },
-//     {
-//       threshold: 0.6
-//     }
-//   );
+        if (!entry.isIntersecting) {
+          video.pause();
+        }
+      });
+    },
+    {
+      threshold: 0.6
+    }
+  );
 
-//   videos.forEach((video) => {
-//     observer.observe(video);
-//   });
-// });
+  videos.forEach((video) => {
+    observer.observe(video);
+  });
+});
